@@ -1,0 +1,154 @@
+@use '../util/' as u;
+
+
+.left-side{
+    height: 100vh;
+    width: u.rem(230);
+    background-color: var(--black);
+    padding: u.rem(15);
+    color: var(--gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__file-info{
+        width: 100%;
+        height: u.rem(30);
+        // outline: 2px solid red;
+        display: flex;
+
+        &__dote{
+            background-color: var(--white);
+            border-radius: 50%;
+            width: u.rem(5);
+            height: u.rem(5);
+            margin: 0px 2px 0px 2px;
+        }
+    }
+    &__icons{
+        &__main{
+            // outline: 1px solid red;
+            margin: 0px 0px 50px 0px;
+            
+            &__ico{
+                display: flex;
+                align-items: center;
+                margin: 10px 0px 10px 0px;
+                transition-duration: 0.5s;
+
+                ion-icon{
+                    font-size: u.rem(30);
+                    color: var(--gray);
+                    cursor: pointer;
+                }
+                .white{
+                    color: white;
+                }
+                .main-icon-text{
+                    font-size: clamp(u.rem(14), 1vw, u.rem(17));
+                    font-family: u.$roboto;
+                    margin-left: u.rem(10);
+                    cursor: pointer;
+                }
+            }
+            &__ico:hover{
+                color: var(--white);
+                ion-icon{
+                    color: var(--white);
+                }
+            }
+
+        }
+        &__other{
+            &__ico{
+                display: flex;
+                align-items: center;
+                margin: 15px 0px 15px 0px;
+                transition-duration: 0.5s;
+
+                ion-icon{
+                    font-size: u.rem(30);
+                    color: var(--gray);
+                    cursor: pointer;
+                }
+                .white-bg{
+                    background-color: var(--light-gray);
+                    color: var(--black);
+                    border-radius: 5px;
+                }
+                .graident-bg{
+                    background-image: linear-gradient(to right, rgb(153, 0, 255) , rgb(204, 0, 255));
+                    font-size: u.rem(20);
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: var(--white);
+                }
+                .main-icon-text{
+                    font-size: clamp(u.rem(14), 1vw, u.rem(17));
+                    font-family: u.$roboto;
+                    margin-left: u.rem(10);
+                    cursor: pointer;
+                }
+                .downloaded{
+                    border-radius: 50%;
+                    font-size:clamp(u.rem(12), 1vw, u.rem(15));
+                    margin-left: clamp(u.rem(24), 1vw, u.rem(30));
+                    background-color: var(--light-gray);
+                    color: var(--black);
+                    padding: 2px;
+                }
+            }
+            &__ico:hover{
+                color: var(--white);
+            }
+        }
+    }
+    &__hr{
+        border: none;
+        background-color: var(--gray);
+        height: 1px;
+    }
+    &__playlists{
+        margin-top: 30px;
+        &__one-list{
+            font-family: u.$roboto;
+            font-weight: u.$regular;
+            font-size: clamp(u.rem(12), 1vw, u.rem(15));
+            margin: 15px 0px 15px 0px;
+            color: var(--gray);
+            cursor: pointer;
+        }
+        &__one-list:hover{
+            color: var(--white);
+        }
+        .downloaded-playlist, .playlist-collection{
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+            // outline: 1px solid red;
+            padding: 0;
+            margin: -7.5px 0px -7.5px 0px;
+        }
+        .downloaded-playlist:hover, .playlist-collection:hover{
+            .downloaded{
+                background-color: var(--white);
+            }
+            .look-down{
+                color: var(--white);
+            }
+        }
+        .downloaded{
+            background-color: var(--gray);
+            color: var(--black);
+            border-radius: 50%;
+            margin-left: 57px;
+            font-size: clamp(u.rem(12), 1vw, u.rem(15));
+        }
+        .look-down{
+            color: var(--gray);
+            font-size: clamp(u.rem(12), 1vw, u.rem(17));
+            margin: 10px;
+        }
+    }
+}
+

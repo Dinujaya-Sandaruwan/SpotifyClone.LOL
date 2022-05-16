@@ -1,0 +1,124 @@
+@use '../util/' as u;
+@use '../global/' as g;
+
+.main{
+    background-color: var(--bg-color);
+    height: 100vh;
+    // width: 100%;
+    position: fixed;
+    top: 0px;
+    left: u.rem(230);
+    right: u.rem(230);
+    // overflow:scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &__top-side{
+        width: 100%;
+        // height: 40vh;
+        background-image: linear-gradient(to bottom, var(--blue) 0%, var(--bg-color) 80%);
+        padding: u.rem(20);
+        // outline: 2px solid red;
+
+        &__top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 0;
+            // outline: 2px solid red;
+            
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // width: u.rem(90);
+
+                ion-icon{
+                    font-size: 23px;
+                    background-color: var(--bg-color);
+                    color: var(--gray);
+                    margin: 0px 10px 0px 0px;
+                    cursor: pointer;
+                    pointer-events: stroke; 
+                    border-radius: 50%;
+                    padding: 5px;
+                    opacity: 70%;
+                }
+            }
+            .round{
+                background-color: var(--bg-color);
+                border-radius: 50px;
+                // padding: 5px;
+                h1{
+                    color: var(--white);
+                    font-family: u.$roboto;
+                    font-size: u.rem(15);
+                    margin-left: 10px;
+                }
+
+                img{
+                    width: 30px;
+                    border-radius: 50%;
+                }
+                ion-icon{
+                    font-size: 15px;
+                }
+            }
+        }
+        .greting{
+            color: var(--white);
+            font-family: u.$roboto;
+            font-weight: u.$bold;
+            margin-top: 30px;
+            font-size: clamp(u.rem(20), 2vw, u.rem(33));
+        }
+
+        &__content{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            div{
+                background-color: rgba(rgb(148, 148, 148), 0.2);
+                font-family: u.$roboto;
+                font-size: clamp(u.rem(5), 1vw, u.rem(9));
+                color: var(--white);
+                display: flex;
+                align-items: center;
+                width: 23vw;
+                min-width: 300px;
+                border-radius: 10px;
+                margin-top: 30px;
+                overflow: hidden;
+                cursor: pointer;
+                transition-duration: 0.5s;
+                position: relative;
+                img{
+                    width: 85px;
+                    margin-right: 15px;
+                }
+            }
+            div:hover{
+                background-color: rgba(rgb(148, 148, 148), 0.5);
+                .play{
+                    display: block;
+                }
+            }
+            .play{
+                position: absolute;
+                top: 17%;
+                right: 5%;
+                font-size: 25px;
+                padding: 15px;
+                color: black;
+                background-color: #1ED760;
+                border-radius: 50%;
+                display: none;
+                // transition-duration: 0.5s;
+            }
+            .play:hover{
+                transform: scale(1.05);
+            }
+        }
+    }    
+
+}

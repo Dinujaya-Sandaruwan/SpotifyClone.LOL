@@ -1,0 +1,68 @@
+@use '../util/' as u;
+
+.right-side{
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: u.rem(230);
+    height: 100%;
+    padding: u.rem(15);
+
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            color: var(--gray);
+            font-family: u.$roboto;
+            font-size: u.rem(17);
+        }
+        div{
+            display: flex;
+            align-items: center;
+            ion-icon{
+                margin: 0px 5px 0px 5px;
+                color: var(--gray);
+                font-size: u.rem(20);
+            }
+            .close{
+                font-size: u.rem(27);
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__content{
+        color: var(--gray);
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        font-family: u.$roboto;
+        line-height: 1.2;
+        cursor: pointer;
+        padding: 5px;
+        transition-duration: 0.5s;
+
+        img{
+            width: 22%;
+            height: 22%;
+            margin-right: 10px;
+        }
+        h1{
+            font-size: u.rem(15);
+        }
+        .song-name{
+            display: flex;
+            font-size: u.rem(12);
+        }
+        .artest{
+            font-size: u.rem(12);
+        }
+    }
+    &__content:hover{
+        background-color: rgb(46, 46, 46);
+        color: var(--white);
+        border-radius: 10px;
+    }
+}
