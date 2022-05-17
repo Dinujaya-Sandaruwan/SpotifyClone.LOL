@@ -8,6 +8,9 @@
     width: u.rem(230);
     height: 100%;
     padding: u.rem(15);
+    @include u.breakpoint-down(second){
+        display: none;        
+    }
 
     &__title{
         display: flex;

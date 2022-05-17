@@ -11,6 +11,10 @@
     top: 0;
     left: 0;
 
+    @include u.breakpoint-down(second){
+        display: none;        
+    }
+
     &__file-info{
         width: 100%;
         height: u.rem(30);

@@ -3,7 +3,7 @@
 
 .main{
     background-color: var(--bg-color);
-    height: 100vh;
+    height: calc(100vh - 100px);
     // width: 100%;
     position: fixed;
     top: 0px;
@@ -12,6 +12,10 @@
     // overflow:scroll;
     overflow-y: scroll;
     overflow-x: hidden;
+    @include u.breakpoint-down(second){
+        left: 0;
+        right: 0;      
+    }
 
     &__top-side{
         width: 100%;
@@ -88,7 +92,7 @@
                     display: flex;
                     align-items: center;
                     width: calc((100vw - 460px)/3.2);
-                    min-width: 200px;
+                    min-width: 250px;
                     border-radius: 10px;
                     margin-top: 30px;
                     overflow: hidden;
@@ -121,6 +125,20 @@
                 }
                 .play:hover{
                     transform: scale(1.05);
+                }
+
+                @include u.breakpoint-down(first){
+                    justify-content: center;
+                    div{
+                        width: calc((100vw - 460px)/1);
+
+                    }
+                }
+                @include u.breakpoint-down(second){
+                    div{
+                        width: calc((100vw - 10px)/1);
+
+                    }
                 }
             }
         }
@@ -164,11 +182,13 @@
             div{
                 width: 200px;
                 min-width: 200px;
-                background-color: #171717;
+                background-color: var(--light-black);
                 padding: 20px;
-                margin-top: 20px;
+                // margin-top: 20px;
                 border-radius: 10px;
                 position: relative;
+                transition-duration: 0.5s;
+                margin: 20px 10px 0px 10px;
                 img{
                     width: 100%;
                     border-radius: 10px;
@@ -214,8 +234,10 @@
             };
             div:hover{
                 background-color: #282828;
+                cursor: pointer;
                 .play{
-                    animation: playanime 1s;
+                    animation: playanime 0.5s;
+                    animation-fill-mode: forwards;
                 }
                 
             }
