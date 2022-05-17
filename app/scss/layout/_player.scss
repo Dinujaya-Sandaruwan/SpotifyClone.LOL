@@ -18,6 +18,13 @@
     &__left{
         display: flex;
         align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 20vw;
+        @include u.breakpoint-down(second){
+            width: 25vw;
+        }
         @include u.breakpoint-down(third){
             display: none;        
         }
@@ -47,6 +54,11 @@
     &__right{
         display: flex;
         align-items: center;
+        justify-content: right;
+        width: 20vw;
+        @include u.breakpoint-down(second){
+            width: 10vw;
+        }
         ion-icon{
             font-size: u.rem(23);
             color: var(--gray);
