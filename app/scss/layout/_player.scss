@@ -138,23 +138,23 @@
                 margin-bottom: 10px;
     
             }
-            .control_player:hover{
-                background: var(--play-color);
-            }
+            // .control_player:hover{
+            //     background: var(--play-color);
+            // }
             .control_player::-webkit-slider-thumb {
                 appearance: none;
-                width:0px;
-                height: 0px;
+                width:10px;
+                height: 10px;
                 border-radius: 50%;
                 background: var(--white);
             }
-            .control_player:hover::-webkit-slider-thumb {
-                appearance: none;
-                width:15px;
-                height: 15px;
-                border-radius: 50%;
-                background: var(--white);
-            } 
+            // .control_player:hover::-webkit-slider-thumb {
+            //     appearance: none;
+            //     width:15px;
+            //     height: 15px;
+            //     border-radius: 50%;
+            //     background: var(--white);
+            // } 
         }
     }
 
