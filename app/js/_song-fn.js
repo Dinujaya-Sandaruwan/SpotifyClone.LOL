@@ -399,3 +399,201 @@ function mxp_11(){
         }
     }
 }
+
+function mxp_12(){
+    if (isPlaying == false) {
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        loadTrack(random_index)
+        d_mix_01.setAttribute('name', 'pause'); //change
+        track_name.innerText = music_list[random_index].name;
+        track_artist.innerText = music_list[random_index].artist;
+        track_art.src = music_list[random_index].img;
+        playpauseTrack();
+        isPlaying = true;
+        element_id = d_mix_01; //change
+        element_name = element_id.id
+    } else {
+        d_mix_01.setAttribute('name', 'play');  //change
+        playpauseTrack();
+        isPlaying = false;
+        element_id = '';
+
+        if (element_name != 'd_mix_01') { //change
+            let random_index = Number.parseInt(Math.random() * music_list.length);
+            loadTrack(random_index)
+            d_mix_01.setAttribute('name', 'pause');    //change
+            track_name.innerText = music_list[random_index].name;
+            track_artist.innerText = music_list[random_index].artist;
+            track_art.src = music_list[random_index].img;
+            playpauseTrack();
+            isPlaying = true;
+            element_id = d_mix_01;  //change
+            element_name = element_id.id;
+        }
+    }
+}
+
+function mxp_13(){
+    if (isPlaying == false) {
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        loadTrack(random_index)
+        d_mix_02.setAttribute('name', 'pause'); //change
+        track_name.innerText = music_list[random_index].name;
+        track_artist.innerText = music_list[random_index].artist;
+        track_art.src = music_list[random_index].img;
+        playpauseTrack();
+        isPlaying = true;
+        element_id = d_mix_02; //change
+        element_name = element_id.id
+    } else {
+        d_mix_02.setAttribute('name', 'play');  //change
+        playpauseTrack();
+        isPlaying = false;
+        element_id = '';
+
+        if (element_name != 'd_mix_02') { //change
+            let random_index = Number.parseInt(Math.random() * music_list.length);
+            loadTrack(random_index)
+            d_mix_02.setAttribute('name', 'pause');    //change
+            track_name.innerText = music_list[random_index].name;
+            track_artist.innerText = music_list[random_index].artist;
+            track_art.src = music_list[random_index].img;
+            playpauseTrack();
+            isPlaying = true;
+            element_id = d_mix_02;  //change
+            element_name = element_id.id;
+        }
+    }
+}
+
+function mxp_14(){
+    if (isPlaying == false) {
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        loadTrack(random_index)
+        d_mix_03.setAttribute('name', 'pause'); //change
+        track_name.innerText = music_list[random_index].name;
+        track_artist.innerText = music_list[random_index].artist;
+        track_art.src = music_list[random_index].img;
+        playpauseTrack();
+        isPlaying = true;
+        element_id = d_mix_03; //change
+        element_name = element_id.id
+    } else {
+        d_mix_03.setAttribute('name', 'play');  //change
+        playpauseTrack();
+        isPlaying = false;
+        element_id = '';
+
+        if (element_name != 'd_mix_03') { //change
+            let random_index = Number.parseInt(Math.random() * music_list.length);
+            loadTrack(random_index)
+            d_mix_03.setAttribute('name', 'pause');    //change
+            track_name.innerText = music_list[random_index].name;
+            track_artist.innerText = music_list[random_index].artist;
+            track_art.src = music_list[random_index].img;
+            playpauseTrack();
+            isPlaying = true;
+            element_id = d_mix_03;  //change
+            element_name = element_id.id;
+        }
+    }
+}
+
+function mxp_15(){
+    if (isPlaying == false) {
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        loadTrack(random_index)
+        d_mix_04.setAttribute('name', 'pause'); //change
+        track_name.innerText = music_list[random_index].name;
+        track_artist.innerText = music_list[random_index].artist;
+        track_art.src = music_list[random_index].img;
+        playpauseTrack();
+        isPlaying = true;
+        element_id = d_mix_04; //change
+        element_name = element_id.id
+    } else {
+        d_mix_04.setAttribute('name', 'play');  //change
+        playpauseTrack();
+        isPlaying = false;
+        element_id = '';
+
+        if (element_name != 'd_mix_04') { //change
+            let random_index = Number.parseInt(Math.random() * music_list.length);
+            loadTrack(random_index)
+            d_mix_04.setAttribute('name', 'pause');    //change
+            track_name.innerText = music_list[random_index].name;
+            track_artist.innerText = music_list[random_index].artist;
+            track_art.src = music_list[random_index].img;
+            playpauseTrack();
+            isPlaying = true;
+            element_id = d_mix_04;  //change
+            element_name = element_id.id;
+        }
+    }
+}
+
+function mxp_16(){
+    if (isPlaying == false) {
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        loadTrack(random_index)
+        d_mix_05.setAttribute('name', 'pause'); //change
+        track_name.innerText = music_list[random_index].name;
+        track_artist.innerText = music_list[random_index].artist;
+        track_art.src = music_list[random_index].img;
+        playpauseTrack();
+        isPlaying = true;
+        element_id = d_mix_05; //change
+        element_name = element_id.id
+    } else {
+        d_mix_05.setAttribute('name', 'play');  //change
+        playpauseTrack();
+        isPlaying = false;
+        element_id = '';
+
+        if (element_name != 'd_mix_05') { //change
+            let random_index = Number.parseInt(Math.random() * music_list.length);
+            loadTrack(random_index)
+            d_mix_05.setAttribute('name', 'pause');    //change
+            track_name.innerText = music_list[random_index].name;
+            track_artist.innerText = music_list[random_index].artist;
+            track_art.src = music_list[random_index].img;
+            playpauseTrack();
+            isPlaying = true;
+            element_id = d_mix_05;  //change
+            element_name = element_id.id;
+        }
+    }
+}
+
+function mxp_17(){
+    if (isPlaying == false) {
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        loadTrack(random_index)
+        d_mix_06.setAttribute('name', 'pause'); //change
+        track_name.innerText = music_list[random_index].name;
+        track_artist.innerText = music_list[random_index].artist;
+        track_art.src = music_list[random_index].img;
+        playpauseTrack();
+        isPlaying = true;
+        element_id = d_mix_06; //change
+        element_name = element_id.id
+    } else {
+        d_mix_06.setAttribute('name', 'play');  //change
+        playpauseTrack();
+        isPlaying = false;
+        element_id = '';
+
+        if (element_name != 'd_mix_06') { //change
+            let random_index = Number.parseInt(Math.random() * music_list.length);
+            loadTrack(random_index)
+            d_mix_06.setAttribute('name', 'pause');    //change
+            track_name.innerText = music_list[random_index].name;
+            track_artist.innerText = music_list[random_index].artist;
+            track_art.src = music_list[random_index].img;
+            playpauseTrack();
+            isPlaying = true;
+            element_id = d_mix_06;  //change
+            element_name = element_id.id;
+        }
+    }
+}

@@ -30,16 +30,16 @@ ion-icon{
 }
 
 ::-webkit-scrollbar{
-    width: 0px;
+    width: 5px;
     // height: 5px;
 }
-// ::-webkit-scrollbar-track{
-//     background-color: transparent;
-// }
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
 
-// ::-webkit-scrollbar-thumb{
-//     background-color: rgba(white, 0.3);
-//     height: 10px;
-//     // border-radius: 10px;
-//     opacity: 0.5;
-// }
+::-webkit-scrollbar-thumb{
+    background-color: rgba(white, 0.3);
+    height: 10px;
+    // border-radius: 10px;
+    opacity: 0.5;
+}

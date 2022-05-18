@@ -133,6 +133,42 @@ const music_list = [
         artist : 'Umariya, NEWS',
         music : 'music/12_Jiya Re - Umariya ft. News.mp3'
     },
+    {
+        img : 'images/songs/podda.jpg',
+        name : 'Podda',
+        artist : 'DJ INK, Monio',
+        music : 'music/18_podda.mp3'
+    },
+    {
+        img : 'images/songs/infinity.jpg',
+        name : 'Infinity',
+        artist : 'Jaymes Young',
+        music : 'music/17_Jaymes Young - Infinity.mp3'
+    },
+    {
+        img : 'images/songs/sada katha.jpg',
+        name : 'Sada Katha - Shanaka ft. Kaizer Kaiz',
+        artist : 'Shanaka, Kaizer Kaiz',
+        music : 'music/16_Sada Katha - Shanaka ft. Kaizer Kaiz.mp3'
+    },
+    {
+        img : 'images/songs/mood.jpg',
+        name : 'MOOD',
+        artist : '24kGolden, inn dior',
+        music : 'music/15_mood.mp3'
+    },
+    {
+        img : 'images/songs/hade shoka.jpg',
+        name : 'Hade Shoka Gangawe',
+        artist : 'Stereomiinds',
+        music : 'music/14_Hade Shoka Gangawe.mp3'
+    },
+    {
+        img : 'images/songs/desawana v.jpg',
+        name : 'Valentine Mashup 2022',
+        artist : 'Desawana Remix',
+        music : 'music/13_Valentine Mashup 2022.mp3'
+    },
 ];
 
 
@@ -149,6 +185,13 @@ let mx_03 = document.getElementById('mx3');
 let mx_04 = document.getElementById('mx4');
 let mx_05 = document.getElementById('mx5');
 let mx_06 = document.getElementById('mx6');
+
+let d_mix_01 = document.getElementById('d_mix_01');
+let d_mix_02 = document.getElementById('d_mix_02');
+let d_mix_03 = document.getElementById('d_mix_03');
+let d_mix_04 = document.getElementById('d_mix_04');
+let d_mix_05 = document.getElementById('d_mix_05');
+let d_mix_06 = document.getElementById('d_mix_06');
 
 
 let track_art = document.getElementById('track_art');
@@ -293,5 +336,11 @@ function setUpdate(){
         total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
+
+document.addEventListener("keypress", function onEvent(e) {
+    if (e.key == ' ') {
+        playpauseTrack()
+    }
+});
 
 playRandom()
