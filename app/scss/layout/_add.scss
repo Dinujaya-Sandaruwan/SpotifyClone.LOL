@@ -1,0 +1,25 @@
+.add-main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--bg-color);
+    .mb-3{
+        // outline: 1px solid red;
+        width: 500px;
+    }
+    form{
+        background-color: var(--white);
+        padding: 50px;
+        border-radius: 20px;
+
+        button{
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}

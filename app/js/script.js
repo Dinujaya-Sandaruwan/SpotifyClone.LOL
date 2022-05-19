@@ -169,6 +169,7 @@ const music_list = [
         artist : 'Desawana Remix',
         music : 'music/13_Valentine Mashup 2022.mp3'
     },
+
 ];
 
 
@@ -219,7 +220,6 @@ loadTrack(track_index);
 // All Play Functions
 let element_id = '';
 let element_name = '';
-
 
 function loadTrack(track_index){
     clearInterval(updateTimer);
@@ -342,5 +342,3 @@ document.addEventListener("keypress", function onEvent(e) {
         playpauseTrack()
     }
 });
-
-playRandom()

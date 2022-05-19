@@ -42,7 +42,7 @@ function jsTask() {
 // Cachebust
 function cacheBustTask() {
 	var cbString = new Date().getTime();
-	return src(['index.html'])
+	return src(['index.php'])
 		.pipe(replace(/cb=\d+/g, 'cb=' + cbString))
 		.pipe(dest('.'));
 }
