@@ -229,12 +229,6 @@ function mxp_06(){
     }
 }
 
-
-
-
-
-
-
 function mxp_07(){
     if (isPlaying == false) {
         curr_track = new Audio(music_list[7].music);
