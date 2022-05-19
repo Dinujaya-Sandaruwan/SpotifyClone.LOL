@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify By Dinujaya</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/style.css?cb=1652929582766">
+    <link rel="stylesheet" href="dist/style.css?cb=1652978375632">
 </head>
 <body>
     <aside class="left-side">
@@ -326,7 +326,7 @@
             <ion-icon name="expand-outline"></ion-icon>
         </div>
     </aside>
-    <script src="dist/all.js?cb=1652929582766"></script>
+    <script src="dist/all.js?cb=1652978375632"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
     <script>

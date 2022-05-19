@@ -194,7 +194,6 @@ let d_mix_04 = document.getElementById('d_mix_04');
 let d_mix_05 = document.getElementById('d_mix_05');
 let d_mix_06 = document.getElementById('d_mix_06');
 
-
 let track_art = document.getElementById('track_art');
 let track_name = document.getElementById('track_name');
 let track_artist = document.getElementById('track_artist');
