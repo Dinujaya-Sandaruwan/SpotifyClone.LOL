@@ -8,7 +8,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
         echo "function fun_".$row['id']."() {";
             echo "if (isPlaying == false) {";
-                echo"track_name = '".$row['song']."';";
+                echo"let track_name = document.getElementById('track_name');";
                 echo"curr_track = new Audio(track_name);";
                 echo"clearInterval(updateTimer);";
                 echo"reset();";
@@ -32,3 +32,4 @@ if ($result->num_rows > 0) {
 }
 
 ?>
+
