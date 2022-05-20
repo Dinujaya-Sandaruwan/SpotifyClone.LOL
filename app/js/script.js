@@ -211,7 +211,7 @@ let curr_track = document.createElement('audio');
 
 let track_index = 0;
 let isPlaying = false;
-let isRandom = false;
+let isRandom = true;
 let updateTimer;
 
 loadTrack(track_index);
@@ -234,7 +234,7 @@ function loadTrack(track_index){
 
     updateTimer = setInterval(setUpdate, 1000);
 
-    curr_track.addEventListener('ended', nextTrack);
+    curr_track.addEventListener('ended', nextSong);
     // random_bg_color();
 }
 
@@ -281,21 +281,26 @@ function pauseTrack(){
     }
 
 }
-function nextTrack(){
-    if(track_index < music_list.length - 1 && isRandom === false){
-        track_index += 1;
-    }else if(track_index < music_list.length - 1 && isRandom === true){
-        let random_index = Number.parseInt(Math.random() * music_list.length);
-        track_index = random_index;
-    }else{
-        track_index = 0;
-    }
-    loadTrack(track_index);
-    track_name.innerText = music_list[track_index].name;
-    track_artist.innerText = music_list[track_index].artist;
-    track_art.src = music_list[track_index].img;
-    playTrack();
+
+function nextSong() {
+    nextTrack()
 }
+
+// function nextTrack(){
+//     if(track_index < music_list.length - 1 && isRandom === false){
+//         track_index += 1;
+//     }else if(track_index < music_list.length - 1 && isRandom === true){
+//         let random_index = Number.parseInt(Math.random() * music_list.length);
+//         track_index = random_index;
+//     }else{
+//         track_index = 0;
+//     }
+//     loadTrack(track_index);
+//     track_name.innerText = music_list[track_index].name;
+//     track_artist.innerText = music_list[track_index].artist;
+//     track_art.src = music_list[track_index].img;
+//     playTrack();
+// }
 function prevTrack(){
     if(track_index > 0){
         track_index -= 1;
