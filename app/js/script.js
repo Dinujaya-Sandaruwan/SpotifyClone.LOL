@@ -338,6 +338,7 @@ function setUpdate(){
 
 document.addEventListener("keypress", function onEvent(e) {
     if (e.key == ' ') {
+        e.preventDefault();
         playpauseTrack()
     }
 });
