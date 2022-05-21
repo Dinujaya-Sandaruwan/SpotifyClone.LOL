@@ -1,0 +1,118 @@
+@use '../util/' as u;
+
+.developer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(black, 0.5);
+    z-index: 10;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &__main{
+        width: 700px;
+        height: 600px;
+        background-color: var(--white);
+        opacity: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+        position: relative;
+
+        img{
+            width: 40%;
+            border-radius: 50%;
+            margin-top: -105px;
+            border: 10px solid var(--white);
+        }
+
+        @media  (max-width: 722px) {
+            img{
+                margin-top: -70px;
+            }
+        }
+
+
+        .top{
+            background-color: var(--play-color);
+            height: 30%;
+            width: 100%;
+            
+
+            ion-icon{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: red;
+                font-size: u.rem(30);
+                border-radius: 5px;
+                // animation: skake 1s forwards;
+                cursor: pointer;
+            }
+
+            @keyframes skake{
+                0%{
+                  transform: translateX(-3px);
+                }
+                10%{
+                    transform: translateX(-3px);
+                  }
+
+                20%{
+                  transform: translateX(3px);
+                }
+                30%{
+                    transform: translateX(-3px);
+                }
+                40%{
+                    transform: translateX(3px);
+                }
+                50%{
+                    transform: translateX(-3px);
+                }
+                60%{
+                    transform: translateX(3px);
+                }
+                70%{
+                    transform: translateX(-3px);
+                }
+                80%{
+                    transform: translateX(3px);
+                }
+                90%{
+                    transform: translateX(-3px);
+                }
+                100%{
+                    transform: translateX(3px);
+                }
+              }
+        }
+        .content{
+            padding: 0px 20px 0px 20px ;
+            h1{
+                font-family: u.$roboto;
+                text-align: center;
+                font-weight: u.$bold;
+                margin-bottom: 20px;
+                color: var(--bg-color);
+            }
+    
+            p{
+                font-size: clamp(u.rem(15) , 2vw ,u.rem(17));
+                font-family: u.$roboto;
+                color: var(--bg-color);
+                font-weight: u.$regular;
+                text-align: justify;
+            }
+        }
+    }
+}
+

@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify By Dinujaya</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/style.css?cb=1653084848873">
+    <link rel="stylesheet" href="dist/style.css?cb=1653121560962">
 </head>
 <body>
     <div class="loader">
         <img src="images/logo.png" alt="">
         <h1>Spotify By Dinujaya</h1>
+    </div>
+    <div class="developer" id="developer" onclick="remove_me_alet()">
+        <div class="developer__main">
+            <div class="top">
+                <ion-icon name="close" id="close_btn" onclick="remove_me()"></ion-icon>
+            </div>
+            <img src="images/profile.jpg" alt="">
+            <div class="content">
+                <h1>Dinujaya Sandaruwan</h1>
+                <p>
+                Hi, my name is Dinujaya Sandaruwan and I created this Spotify Clone because I want to showcase my website development skills.<br>
+                I used HTML, Scss, JavaScript, PHP, SQL and Node to create this site, so I can use this site to play my favorite songs like Spotify. It also has a database so I can insert and delete songs at any time.<br>
+                But the special thing is, you can also download the source code of this site from my Guthub profile.<br>
+                Lastly if you want to create any kind of website feel free to talk me.<br>
+                </p>
+            </div>
+        </div>
     </div>
     <aside class="left-side">
         <div class="left-side__file-info">
@@ -72,7 +89,7 @@
                     <ion-icon name="chevron-back"></ion-icon>
                     <ion-icon name="chevron-forward"></ion-icon>
                 </div>
-                <div class="round">
+                <div class="round" onclick="display_me()">
                     <img src="images/profile.jpg" alt="Profile">
                     <h1>Dinujaya</h1>
                     <ion-icon name="caret-down"></ion-icon>
@@ -330,9 +347,9 @@
             <ion-icon name="expand-outline"></ion-icon>
         </div>
     </aside>
-    <script src="dist/all.js?cb=1653084848873"></script>
+    <script src="dist/all.js?cb=1653121560962"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-
+    
     <script>
         <?php
         include 'song_list.php';
