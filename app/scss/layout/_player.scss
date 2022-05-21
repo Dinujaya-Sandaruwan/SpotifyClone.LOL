@@ -57,7 +57,7 @@
         justify-content: right;
         width: 20vw;
         @include u.breakpoint-down(second){
-            width: 10vw;
+            display: none;
         }
         ion-icon{
             font-size: u.rem(23);
@@ -93,17 +93,12 @@
             border-radius: 50%;
             background: var(--white);
         } 
-        
-        @include u.breakpoint-down(second){
-            ion-icon{
-                display: none;
-            }
-            .volume{
-                display: inline;
-            }  
-            .control_volume{
-                width: 50px;
-            }     
+        .volume_div{
+            // outline: 2px solid red;
+            height: 4.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -112,6 +107,9 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        @include u.breakpoint-down(second){
+            width: 100%;
+        }
         .controls{
             display: flex;
             align-items: center;
@@ -148,6 +146,10 @@
                 width: 30vw;
                 margin-top: 10px;
                 margin-bottom: 10px;
+
+                @include u.breakpoint-down(second){
+                    width: 60vw;
+                }
     
             }
             // .control_player:hover{

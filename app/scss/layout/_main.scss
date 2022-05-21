@@ -177,18 +177,20 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            height: 300px;
             max-height: 300px;
+            align-items: center;
             overflow: hidden;
             div{
                 width: 200px;
                 min-width: 200px;
                 background-color: var(--light-black);
                 padding: 20px;
-                // margin-top: 20px;
+                height: 276px;
                 border-radius: 10px;
                 position: relative;
                 transition-duration: 0.5s;
-                margin: 20px 10px 0px 10px;
+                margin: 12px 10px 12px 10px;
                 img{
                     width: 100%;
                     border-radius: 10px;

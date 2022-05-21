@@ -1,0 +1,38 @@
+@use '../util/' as u;
+
+.loader{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 2s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+
+    img{
+        width: clamp(40px, 8vw, 100px);
+    }
+    h1{
+        color: var(--white);
+        font-family: u.$roboto;
+        margin-left: 10px;
+        font-size: clamp(18.75px, 5vw, 50px);
+    }
+
+    @keyframes loader {
+        0% {
+            opacity: 100;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden
+        }
+    }
+}
+

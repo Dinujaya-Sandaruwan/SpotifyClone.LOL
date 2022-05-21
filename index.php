@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify By Dinujaya</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/style.css?cb=1653055886509">
+    <link rel="stylesheet" href="dist/style.css?cb=1653084848873">
 </head>
 <body>
+    <div class="loader">
+        <img src="images/logo.png" alt="">
+        <h1>Spotify By Dinujaya</h1>
+    </div>
     <aside class="left-side">
         <div class="left-side__file-info">
             <div class="left-side__file-info__dote"></div>
@@ -208,10 +212,10 @@
 
         <div class="main__content">
             <div class="main__content__top">
-                <h1>Made For Dinujaya</h1>
+                <h1>Dinujaya's Faves</h1>
                 <h2>SEE ALL</h2>
             </div>
-            <div class="main__content__body">
+            <div class="main__content__body" id="change_height">
             <?php
                 include 'data.php';
             ?>
@@ -321,12 +325,12 @@
             <ion-icon name="mic-outline"></ion-icon>
             <ion-icon name="list-outline"></ion-icon>
             <ion-icon name="cellular-outline"></ion-icon>
-            <ion-icon name="volume-medium-outline" class="volume"></ion-icon>
-            <input type="range" class="control_volume " id="volume_inp" min="1" max="100" value="99" onchange="setVolume()">
+            <ion-icon name="volume-medium-outline" class="volume" onclick="volume_click()"></ion-icon>
+            <div class="volume_div" id="volume_div"> <input type="range" class="control_volume " id="volume_inp" min="1" max="100" value="99" onchange="setVolume()"></div>
             <ion-icon name="expand-outline"></ion-icon>
         </div>
     </aside>
-    <script src="dist/all.js?cb=1653055886509"></script>
+    <script src="dist/all.js?cb=1653084848873"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
     <script>

@@ -1,7 +1,7 @@
 <?php
 include 'add/dbcon.php';
 
-$sql = "SELECT * FROM `songs`;";
+$sql = "SELECT * FROM `songs` ORDER BY RAND();";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

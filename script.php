@@ -4,6 +4,8 @@ include 'add/dbcon.php';
 $sql = "SELECT * FROM `songs`;";
 $result = $conn->query($sql);
 
+echo"let height_count = 0;";
+
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
         echo "function fun_".$row['id']."() {";
@@ -51,10 +53,25 @@ if ($result->num_rows > 0) {
                 echo"element_name = play_element.id;";
             echo"}";
         echo "}";
+
+        echo"height_count = height_count + 1;";       
     }
 }else {
     echo "0 results";
 }
+
+echo"let height_element = document.getElementById('change_height');";
+echo"let real_height  = height_count*50;";
+echo"if ((height_count/6) == 0){";
+    echo"let height_number = height_count/6;";
+    echo"height_element.style.maxHeight = height_number * 300 + 'px';";
+    echo"height_element.style.height = height_number * 300 + 'px';";
+echo"}else{";
+    echo"height_count = real_height - ((height_count% 6) * 50);";
+    echo"height_element.style.maxHeight = height_count + 'px';";
+    echo"height_element.style.height = height_count + 'px';";
+echo"}";
+
 
 ?>
 
