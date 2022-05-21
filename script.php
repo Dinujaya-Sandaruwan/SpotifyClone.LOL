@@ -60,6 +60,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
+echo"console.log('Database has ' + height_count + ' songs');";
 echo"let height_element = document.getElementById('change_height');";
 echo"let real_height  = height_count*50;";
 echo"if ((height_count/6) == 0){";

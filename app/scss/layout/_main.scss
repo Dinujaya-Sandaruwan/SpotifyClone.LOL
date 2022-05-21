@@ -29,6 +29,13 @@
             align-items: center;
             justify-content: space-between;
             margin-right: 0;
+            // position: fixed;
+            // top: 0px;
+            // left: u.rem(230);
+            // right: u.rem(230);
+            // z-index: 100;
+            // background-color: var(--blue);
+            // padding: u.rem(20) u.rem(20) 0px u.rem(20);
             // outline: 2px solid red;
             
             div{
@@ -59,6 +66,8 @@
                     font-family: u.$roboto;
                     font-size: u.rem(15);
                     margin-left: 10px;
+                    margin-right: 5px;
+
                 }
 
                 img{
@@ -69,6 +78,42 @@
                     font-size: 15px;
                 }
             }
+            @keyframes ggg{
+                0%{
+                  transform: translateX(-3px);
+                }
+                10%{
+                    transform: translateX(-3px);
+                  }
+
+                20%{
+                  transform: translateX(3px);
+                }
+                30%{
+                    transform: translateX(-3px);
+                }
+                40%{
+                    transform: translateX(3px);
+                }
+                50%{
+                    transform: translateX(-3px);
+                }
+                60%{
+                    transform: translateX(3px);
+                }
+                70%{
+                    transform: translateX(-3px);
+                }
+                80%{
+                    transform: translateX(3px);
+                }
+                90%{
+                    transform: translateX(-3px);
+                }
+                100%{
+                    transform: translateX(3px);
+                }
+              }
         }
         .greting{
             color: var(--white);

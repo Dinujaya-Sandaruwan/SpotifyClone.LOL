@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify By Dinujaya</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/style.css?cb=1653121560962">
+    <link rel="stylesheet" href="dist/style.css?cb=1653172102413">
 </head>
 <body>
     <div class="loader">
         <img src="images/logo.png" alt="">
         <h1>Spotify By Dinujaya</h1>
     </div>
-    <div class="developer" id="developer" onclick="remove_me_alet()">
+    <div class="large_screen" onclick="remove_screen()" id="screen_alt">
+        <img src="images/large.png" alt="">
+    </div>
+    <div class="developer" id="developer" onclick="remove_me_alet()">        
         <div class="developer__main">
             <div class="top">
                 <ion-icon name="close" id="close_btn" onclick="remove_me()"></ion-icon>
             </div>
+            <a href="https://www.facebook.com/dinujaya.sandaruwan/" target="_blank">
             <img src="images/profile.jpg" alt="">
+            </a>
             <div class="content">
                 <h1>Dinujaya Sandaruwan</h1>
                 <p>
-                Hi, my name is Dinujaya Sandaruwan and I created this Spotify Clone because I want to showcase my website development skills.<br>
-                I used HTML, Scss, JavaScript, PHP, SQL and Node to create this site, so I can use this site to play my favorite songs like Spotify. It also has a database so I can insert and delete songs at any time.<br>
-                But the special thing is, you can also download the source code of this site from my Guthub profile.<br>
-                Lastly if you want to create any kind of website feel free to talk me.<br>
+                ⭕️ Hi, my name is Dinujaya Sandaruwan and I created this Spotify Clone because I want to showcase my web development skills. 😆😅<br>
+                ⭕️ I used <span>HTML, Scss, JavaScript, PHP, SQL and Node</span> to create this site, so I can use this site to play my favorite songs like Spotify. It also has a database, so I can insert and delete songs at any time.😌😇<br>
+                ⭕️ But the special thing is, you can also download the source code of this site from my Github profile. 😋😋<br>
+                ⭕️ Lastly if you want to create any kind of website feel free to talk me.🤭🤭<br>
                 </p>
             </div>
-        </div>
+        </div>     
     </div>
     <aside class="left-side">
         <div class="left-side__file-info">
@@ -42,21 +47,21 @@
                     <ion-icon name="home" class="white"></ion-icon>
                     <h1 class="main-icon-text white">Home</h1>
                 </div>
-                <div class="left-side__icons__main__ico">
+                <div class="left-side__icons__main__ico" onclick="watch_me()">
                     <ion-icon name="search-outline"></ion-icon>
                     <h1 class="main-icon-text">Search</h1>
                 </div>
-                <div class="left-side__icons__main__ico">
+                <div class="left-side__icons__main__ico" onclick="watch_me()">
                     <ion-icon name="library-outline"></ion-icon>
                     <h1 class="main-icon-text">Your Library</h1>
                 </div>
             </div>
             <div class="left-side__icons__other">
-                <div class="left-side__icons__other__ico">
+                <div class="left-side__icons__other__ico" onclick="watch_me()">
                     <ion-icon name="add-outline" class="white-bg"></ion-icon>
                     <h1 class="main-icon-text">Create Playlist</h1>
                 </div>
-                <div class="left-side__icons__other__ico">
+                <div class="left-side__icons__other__ico" onclick="watch_me()">
                     <ion-icon name="heart" class="graident-bg"></ion-icon>
                     <h1 class="main-icon-text">Liked Songs</h1>
                     <ion-icon name="arrow-down-outline" class="downloaded"></ion-icon>
@@ -65,70 +70,70 @@
         </div>
         <hr class="left-side__hr">
         <div class="left-side__playlists">
-            <h3 class="left-side__playlists__one-list">Lofi Girl's Favourits</h3>
-            <div class="downloaded-playlist">
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">Lofi Girl's Favourits</h3>
+            <div class="downloaded-playlist" onclick="watch_me()">
                 <h3 class="left-side__playlists__one-list">Hits of All Time</h3>
                 <ion-icon name="arrow-down-outline" class="downloaded"></ion-icon>
             </div>
-            <h3 class="left-side__playlists__one-list">Top Hits | Bonfire</h3>
-            <h3 class="left-side__playlists__one-list">My Songs List For Editing</h3>
-            <h3 class="left-side__playlists__one-list">Best Hindi Songs</h3>
-            <h3 class="left-side__playlists__one-list">Specific Artests</h3>
-            <div class="playlist-collection">
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">Top Hits | Bonfire</h3>
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">My Songs List For Editing</h3>
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">Best Hindi Songs</h3>
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">Specific Artests</h3>
+            <div class="playlist-collection" onclick="watch_me()">
                 <h3 class="left-side__playlists__one-list">Kaveesha Dilmin</h3>
                 <ion-icon name="caret-down" class="look-down"></ion-icon>
             </div>
-            <h3 class="left-side__playlists__one-list">&nbsp &nbsp My Favourits</h3>
-            <h3 class="left-side__playlists__one-list">Sinhala My Favourits</h3>
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">&nbsp &nbsp My Favourits</h3>
+            <h3 class="left-side__playlists__one-list" onclick="watch_me()">Sinhala My Favourits</h3>
         </div>
     </aside>
     <main class="main">
-        <div class="main__top-side">
+        <div class="main__top-side" id="main__top_side">
             <div class="main__top-side__top">
                 <div>
                     <ion-icon name="chevron-back"></ion-icon>
                     <ion-icon name="chevron-forward"></ion-icon>
                 </div>
-                <div class="round" onclick="display_me()">
+                <div class="round" onclick="display_me()" id="dinujaya">
                     <img src="images/profile.jpg" alt="Profile">
                     <h1>Dinujaya</h1>
                     <ion-icon name="caret-down"></ion-icon>
                 </div>
             </div>
 
-            <h1 class="greting">Good Morning</h1>    
+            <h1 class="greting" id="greting">Good Morning</h1>    
 
             <div class="main__top-side__content">
                 <!-- Top Contents -->
                 <div class="main__top-side__content__row">
-                    <div>
+                    <div id="top_01_for_anime" >
                         <img src="images/like.png" alt="...">
                         <h1>Liked Songs</h1>
                         <ion-icon class="play" name="play" id="top_01" onclick="mxp_00()"></ion-icon>
                     </div>
-                    <div>
+                    <div id="top_02_for_anime">
                         <img src="images/songs/kalu.jpg" alt="...">
                         <h1>KALU's Faves</h1>
                         <ion-icon class="play" name="play" id="top_02" onclick="mxp_01()"></ion-icon>
                     </div>
-                    <div>
+                    <div id="top_03_for_anime">
                         <img src="images/songs/nadun uyana.jpg" alt="...">
                         <h1>Nadun Uyana (නදුන් උයන)</h1>
                         <ion-icon class="play" name="play" id="top_03" onclick="mxp_02()"></ion-icon>
                     </div>
                 </div>
                 <div class="main__top-side__content__row">
-                    <div>
+                    <div id="top_04_for_anime">
                         <img src="images/songs/evening.jpg" alt="...">
                         <h1>Songs For Everning</h1>
                         <ion-icon class="play" name="play" id="top_04" onclick="mxp_03()"></ion-icon>
                     </div>
-                    <div>
+                    <div id="top_05_for_anime">
                         <img src="images/songs/sandawathiye.jpg" alt="...">
                         <h1>Sandawathiye (Mix)</h1>
                         <ion-icon class="play" name="play" id="top_05" onclick="mxp_04()"></ion-icon>
                     </div>
-                    <div>
+                    <div id="top_06_for_anime">
                         <img src="images/songs/baby shark.jpg" alt="...">
                         <h1>Baby Chark (Mix)</h1>
                         <ion-icon class="play" name="play" id="top_06" onclick="mxp_05()"></ion-icon>
@@ -248,7 +253,7 @@
                 <ion-icon name="close-outline" class="close"></ion-icon>
             </div>
         </div>
-        <div class="right-side__content">
+        <div class="right-side__content" onclick="fun_19()">
             <img src="images/dineth.jpg" alt="..." class="avater">
             <div>
                 <h1>Dineth Siriwardha...</h1>
@@ -259,7 +264,7 @@
                 <p class="artest">Song By Eranda Abegu...</p>
             </div>
         </div>
-        <div class="right-side__content">
+        <div class="right-side__content" onclick="mxp_04()">
             <img src="images/kalu.png" alt="..." class="avater">
             <div>
                 <h1>Kalu Malli</h1>
@@ -270,18 +275,18 @@
                 <p class="artest">Song By Charitha Attalage</p>
             </div>
         </div>
-        <div class="right-side__content">
+        <div class="right-side__content" onclick="fun_20()">
             <img src="images/maniya.png" alt="..." class="avater">
             <div>
                 <h1>Maniya</h1>
                 <div class="song-name">
                     <ion-icon name="musical-notes"></ion-icon>
-                    <p class="song">&nbsp Py FM Theme</p>
+                    <p class="song">&nbsp Digu Desa Dutuwama</p>
                 </div>
-                <p class="artest">Song By Lahiru Supun</p>
+                <p class="artest">Song By Romesh...</p>
             </div>
         </div>
-        <div class="right-side__content">
+        <div class="right-side__content" onclick="fun_21()">
             <img src="images/hasitha.jpg" alt="..." class="avater">
             <div>
                 <h1>Hasitha Sandeepa</h1>
@@ -292,7 +297,7 @@
                 <p class="artest">Song By Karunarathna...</p>
             </div>
         </div>
-        <div class="right-side__content">
+        <div class="right-side__content" onclick="fun_22()">
             <img src="images/podda.png" alt="..." class="avater">
             <div>
                 <h1>Podda</h1>
@@ -300,10 +305,10 @@
                     <ion-icon name="musical-notes"></ion-icon>
                     <p class="song">&nbsp Channa Kinnaravi</p>
                 </div>
-                <p class="artest">Song By Pasan Liyanage</p>
+                <p class="artest">Song By Bachi Susan</p>
             </div>
         </div>
-        <div class="right-side__content">
+        <div class="right-side__content" onclick="fun_23()">
             <img src="images/aruni.jpg" alt="..." class="avater">
             <div>
                 <h1>Anusarani Gunaw...</h1>
@@ -347,7 +352,7 @@
             <ion-icon name="expand-outline"></ion-icon>
         </div>
     </aside>
-    <script src="dist/all.js?cb=1653121560962"></script>
+    <script src="dist/all.js?cb=1653172102413"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     
     <script>
@@ -355,7 +360,7 @@
         include 'song_list.php';
         include 'script.php';
         ?>
-    </script>
 
+    </script>
 </body>
 </html>

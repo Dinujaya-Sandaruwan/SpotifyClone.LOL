@@ -15,6 +15,9 @@
 //     topp.style.backgroundImage = 'linear-gradient(to bottom, var(--green) 0%, var(--bg-color) 80%)';
     
 // }
+// Remove Right Click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 
 // Volume and Player background and forground color changer
 document.getElementById("volume_inp").addEventListener('input',  function() {

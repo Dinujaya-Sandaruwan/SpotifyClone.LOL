@@ -39,5 +39,22 @@ echo"function nextTrack(){";
     echo"track_art.src = music_list_php[track_index].img;";
     echo"playTrack();";
 echo"}";
-?>
+
+// echo"function prevTrack(){";
+//     echo"if(track_index > 0){";
+//         echo"track_index -= 1;";
+//     echo"}else{";
+//         echo"track_index = music_list_php.length -1;";
+//     echo"clearInterval(updateTimer);";
+//     echo"reset();";
+//     echo"curr_track.src = music_list_php[track_index].music;";
+//     echo"curr_track.load();";
+//     echo"updateTimer = setInterval(setUpdate, 1000);";
+//     echo"curr_track.addEventListener('ended', nextSong);";
+//     echo"track_name.innerText = music_list_php[track_index].name;";
+//     echo"track_artist.innerText = music_list_php[track_index].artist;";
+//     echo"track_art.src = music_list_php[track_index].img;";
+//     echo"playTrack();";
+// echo"}";
+// ?>
 

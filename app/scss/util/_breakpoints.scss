@@ -19,6 +19,7 @@ $spotify:(
     "first":f.em(1259),
     "second": f.em(935),
     "third": f.em(695),
+    "screen":f.em(1200)
 );
 
 @mixin breakpoint($size) {
