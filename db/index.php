@@ -23,13 +23,6 @@ $song_count = 0;
             width: 0px;
         }
 
-        * {
-            -webkit-user-select: all;
-            -khtml-user-select: all;
-            -moz-user-select: -moz-all;
-            -o-user-select: all;
-            user-select: all;
-        }
     </style>
   </head>
   <body>
