@@ -74,6 +74,8 @@ $song_count = 0;
                     ?>
                 </tbody>
             </table>
+
+            <h2>Total <span><?php echo $song_count?></span> Songs in DB</h2>
         </div>
 
         
