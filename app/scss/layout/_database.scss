@@ -68,9 +68,22 @@
 
         table{
             margin-top: 50px;
+
+            img{
+                width: 40px;
+                margin-right: 15px;
+                border-radius: 10px;
+            }
+
+            td{
+                vertical-align: middle;
+            }
         }
     }
 
 
+    // .thumb{
+    //     display: none;
+    // }
     
 }

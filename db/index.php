@@ -64,7 +64,7 @@ $song_count = 0;
                             $song_count = $song_count +1;
                             echo'<tr>';
                             echo'    <th scope="row">'.$row['id'].'</th>';
-                            echo'    <td>'.$row['name'].'</td>';
+                            echo'    <td><img class="thumb" src="../'.$row['thumb'].'" alt=""> '.$row['name'].'</td>';
                             echo'    <td>'.$row['artist'].'</td>';
                             echo'    <td><form action="delete.php" method="post"><input type="hidden" name="id" value="'.$row['id'].'"><button type="submit" class="btn btn-danger">Remove</button></form></td>';
                             echo'</tr>';  
