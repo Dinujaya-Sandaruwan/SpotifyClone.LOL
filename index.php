@@ -135,7 +135,7 @@
                     </div>
                     <div id="top_06_for_anime">
                         <img src="images/songs/baby shark.jpg" alt="...">
-                        <h1>Baby Chark (Mix)</h1>
+                        <h1>Baby Shark (Mix)</h1>
                         <ion-icon class="play" name="play" id="top_06" onclick="mxp_05()"></ion-icon>
                     </div>
                 </div>
