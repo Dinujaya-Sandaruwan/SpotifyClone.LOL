@@ -5,7 +5,7 @@ let cookie = getCookie('login');
 // console.log(cookie);
 
 function check_pass2(){
-    if (inputPassword2.value == 'dinujaya.2003') {
+    if (inputPassword2.value == 'spotifyclone') {
         password.style.display = 'none';
         document.cookie = "login=true";
     }  

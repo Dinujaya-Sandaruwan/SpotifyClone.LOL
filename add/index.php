@@ -26,11 +26,11 @@
             <h1>ADD SONGS</h1>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Song name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="name">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="name" maxlength="19">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Song Artist</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="artist">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="artist" maxlength="30">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Song Thumbnail</label>
