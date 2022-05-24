@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify By Dinujaya</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/style.css?cb=1653380997614">
+    <link rel="stylesheet" href="dist/style.css?cb=1653389526272">
 </head>
 <body>
     <div class="loader">
@@ -347,12 +347,12 @@
             <ion-icon name="mic-outline"></ion-icon>
             <ion-icon name="list-outline"></ion-icon>
             <ion-icon name="cellular-outline"></ion-icon>
-            <ion-icon name="volume-medium-outline" class="volume" onclick="volume_click()"></ion-icon>
+            <ion-icon name="volume-medium-outline" class="volume"></ion-icon>
             <div class="volume_div" id="volume_div"> <input type="range" class="control_volume " id="volume_inp" min="1" max="100" value="99" onchange="setVolume()"></div>
             <ion-icon name="expand-outline"></ion-icon>
         </div>
     </aside>
-    <script src="dist/all.js?cb=1653380997614"></script>
+    <script src="dist/all.js?cb=1653389526272"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     
     <script>
