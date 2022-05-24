@@ -42,7 +42,7 @@ $song_count = 0;
         </div>
 
         <div class="top-bar">
-            <h1>Dinujaya's Spotify Database</h1>
+            <h1>My Spotify Database</h1>
         </div>
         <div class="content">
             <h2>Let's see how many <span>Songs</span> my in DB 😋😋</h2>
