@@ -32,7 +32,7 @@ $song_count = 0;
                 <div class="row g-3">
                 <div class="col-auto">
                     <label class="visually-hidden">Password</label>
-                    <input type="text" type="password" class="form-control" id="password_input" placeholder="Password">
+                    <input type="password" class="form-control" id="password_input" placeholder="Password">
                 </div>
                 <div class="col-auto">
                     <button class="btn btn-primary mb-3" onclick="check_pass2()">Confirm identity</button>
@@ -74,8 +74,8 @@ $song_count = 0;
                     ?>
                 </tbody>
             </table>
-
-            <h2>Total <span><?php echo $song_count?></span> Songs in DB</h2>
+            <?php $missed_songs = $song_count % 6?>
+            <h2>Total <span><?php echo $song_count?></span> Songs in DB and <span style="color:#fa0f0f;">0<?php echo $missed_songs?></span></span> missed.</h2>
         </div>
 
         

@@ -13,7 +13,7 @@
         <div class="row g-3">
           <div class="col-auto">
             <label class="visually-hidden">Password</label>
-            <input type="text" type="password" class="form-control" id="password_input" placeholder="Password">
+            <input type="password" class="form-control" id="password_input" placeholder="Password">
           </div>
           <div class="col-auto">
             <button class="btn btn-primary mb-3" onclick="check_pass()">Confirm identity</button>
@@ -34,11 +34,11 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Song Thumbnail</label>
-                <input class="form-control" type="file" id="formFile" name="thumb">
+                <input class="form-control" type="file" id="formFile" name="thumb" accept=".jpg,.jpeg,.png">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Song File (mp3)</label>
-                <input class="form-control" type="file" id="formFile" name="song">
+                <input class="form-control" type="file" id="formFile" name="song" accept=".mp3,.webm">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
