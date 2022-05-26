@@ -2,7 +2,6 @@ let inputPassword2 = document.getElementById('password_input');
 let password = document.getElementById('password');
 
 let cookie = getCookie('login')
-console.log(cookie)
 
 function check_pass(){
     if (inputPassword2.value == 'spotifyclone') {
@@ -27,3 +26,17 @@ function getCookie(name) {
     }
     return null;
 }
+
+function getDate()
+{
+	let  today 		= new Date();
+	let  dd 		= String(today.getDate()).padStart(2, '0');
+	let  mm 		= String(today.getMonth() + 1).padStart(2, '0'); //janvier = 0
+	let  yyyy 		= today.getFullYear();
+
+	return dd + '/' + mm + '/' + yyyy;
+}
+
+let pc_date = getDate();
+
+document.getElementById('pcDate').value = pc_date;

@@ -38,8 +38,10 @@ if (isset($_FILES['song'])) {
 
 $name = $_POST['name'];
 $artist = $_POST['artist'];
+$select = $_POST['select'];
+$date = $_POST['date'];
 
-$sql = "INSERT INTO `songs`(`name`, `thumb`, `song`, `artist`) VALUES ('$name','$img_real_path','$song_real_path','$artist')";
+$sql = "INSERT INTO `songs`(`name`, `thumb`, `song`, `artist`, `playlist`, `date`) VALUES ('$name','$img_real_path','$song_real_path','$artist', '$select', '$date')";
 $conn->query($sql);
 
 header("Location: index.php");  

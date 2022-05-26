@@ -26,19 +26,27 @@
             <h1>ADD SONGS</h1>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Song name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="name" maxlength="19">
+                <input type="text" class="form-control"  placeholder="" name="name" maxlength="19">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Song Artist</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="artist" maxlength="30">
+                <input type="text" class="form-control"  placeholder="" name="artist" maxlength="30">
             </div>
             <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">PlayList Name</label>
+                <select class="form-select" aria-label="Default select example" name="select">
+                  <option selected>Regular</option>
+                  <option value="lofi">Lofi</option>
+                </select>
+            </div>
+            <input type="hidden" class="form-control" placeholder="" id="pcDate" name="date" maxlength="30">
+            <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Song Thumbnail</label>
-                <input class="form-control" type="file" id="formFile" name="thumb" accept=".jpg,.jpeg,.png">
+                <input class="form-control" type="file"  name="thumb" accept=".jpg,.jpeg,.png">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Song File (mp3)</label>
-                <input class="form-control" type="file" id="formFile" name="song" accept=".mp3,.webm">
+                <input class="form-control" type="file"  name="song" accept=".mp3,.webm">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
