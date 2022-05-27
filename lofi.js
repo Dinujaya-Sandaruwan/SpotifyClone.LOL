@@ -37,7 +37,7 @@ function lofi_27(){
         track_art.src = lofi_list[0].thumb;
         playpauseTrack();
         isPlaying = true;
-        element_id = 'lofi_music_27';
+        element_id_name = 'lofi_music_27';
     } else {
         document.getElementById('lofi_song_27').style.removeProperty('display');
         document.getElementById('lofi_icon_27').style.removeProperty('display');
@@ -46,9 +46,9 @@ function lofi_27(){
         playpauseTrack();
         isPlaying = false;
 
-        element_id = '';
+        element_id_name = '';
 
-        if (element_id != 'lofi_music_27') {
+        if (element_id_name != 'lofi_music_27') {
             curr_track = new Audio(lofi_list[0].music);
             
             curr_track.src = lofi_list[0].song;
@@ -61,76 +61,67 @@ function lofi_27(){
             document.getElementById('lofi_musuc_bars_27').style.display = 'block';
             document.getElementById('lofi_song_name_27').style.color = 'var(--play-color)';
 
-            document.getElementById('lofi_song_27').style.removeProperty('display');
-            document.getElementById('lofi_icon_27').style.removeProperty('display');
-            document.getElementById('lofi_musuc_bars_27').style.removeProperty('display');
-            document.getElementById('lofi_song_name_27').style.color = 'var(--white)';
-
             track_name.innerText = lofi_list[0].name;
             track_artist.innerText = lofi_list[0].artist;
-            track_art.src = lofi_list[0].img;
+            track_art.src = lofi_list[0].thumb;
             playpauseTrack();
             isPlaying = true;
-            element_id = 'lofi_music_27';
+            element_id_name = 'lofi_music_27';
         }
     }
 }
 
-function lofi_28(){
-    if (isPlaying == false) {
-        curr_track = new Audio(lofi_list[1].song);
+// function lofi_28(){
+//     if (isPlaying == false) {
+//         curr_track = new Audio(lofi_list[1].song);
 
-        curr_track.src = lofi_list[1].song;
-        curr_track.load();
-        updateTimer = setInterval(setUpdate, 1000);
-        curr_track.addEventListener('ended', nextSong);
+//         curr_track.src = lofi_list[1].song;
+//         curr_track.load();
+//         updateTimer = setInterval(setUpdate, 1000);
+//         curr_track.addEventListener('ended', nextSong);
 
-        document.getElementById('lofi_song_28').style.display = 'none';
-        document.getElementById('lofi_icon_28').style.display = 'none';
-        document.getElementById('lofi_musuc_bars_28').style.display = 'block';
-        document.getElementById('lofi_song_name_28').style.color = 'var(--play-color)';
-        track_name.innerText = lofi_list[1].name;
-        track_artist.innerText = lofi_list[1].artist;
-        track_art.src = lofi_list[1].thumb;
-        playpauseTrack();
-        isPlaying = true;
-        element_id = 'lofi_music_27';
-    } else {
-        document.getElementById('lofi_song_28').style.removeProperty('display');
-        document.getElementById('lofi_icon_28').style.removeProperty('display');
-        document.getElementById('lofi_musuc_bars_28').style.removeProperty('display');
-        document.getElementById('lofi_song_name_28').style.color = 'var(--white)';
-        playpauseTrack();
-        isPlaying = false;
+//         document.getElementById('lofi_song_28').style.display = 'none';
+//         document.getElementById('lofi_icon_28').style.display = 'none';
+//         document.getElementById('lofi_musuc_bars_28').style.display = 'block';
+//         document.getElementById('lofi_song_name_28').style.color = 'var(--play-color)';
+//         track_name.innerText = lofi_list[1].name;
+//         track_artist.innerText = lofi_list[1].artist;
+//         track_art.src = lofi_list[1].thumb;
+//         playpauseTrack();
+//         isPlaying = true;
+//         element_id = 'lofi_music_28';
+//     } else {
+//         document.getElementById('lofi_song_28').style.removeProperty('display');
+//         document.getElementById('lofi_icon_28').style.removeProperty('display');
+//         document.getElementById('lofi_musuc_bars_28').style.removeProperty('display');
+//         document.getElementById('lofi_song_name_28').style.color = 'var(--white)';
+//         playpauseTrack();
+//         isPlaying = false;
 
-        element_id = '';
+//         element_id = '';
 
-        if (element_id != 'lofi_music_28') {
-            curr_track = new Audio(lofi_list[1].music);
+//         if (element_id != 'lofi_music_28') {
+//             curr_track = new Audio(lofi_list[1].music);
+//             console.log('id done');
             
-            curr_track.src = lofi_list[1].song;
-            curr_track.load();
-            updateTimer = setInterval(setUpdate, 1000);
-            curr_track.addEventListener('ended', nextSong);
+//             curr_track.src = lofi_list[1].song;
+//             curr_track.load();
+//             updateTimer = setInterval(setUpdate, 1000);
+//             curr_track.addEventListener('ended', nextSong);
 
-            document.getElementById('lofi_song_28').style.display = 'none';
-            document.getElementById('lofi_icon_28').style.display = 'none';
-            document.getElementById('lofi_musuc_bars_28').style.display = 'block';
-            document.getElementById('lofi_song_name_28').style.color = 'var(--play-color)';
+//             document.getElementById('lofi_song_28').style.display = 'none';
+//             document.getElementById('lofi_icon_28').style.display = 'none';
+//             document.getElementById('lofi_musuc_bars_28').style.display = 'block';
+//             document.getElementById('lofi_song_name_28').style.color = 'var(--play-color)';
 
-            document.getElementById('lofi_song_27').style.removeProperty('display');
-            document.getElementById('lofi_icon_27').style.removeProperty('display');
-            document.getElementById('lofi_musuc_bars_27').style.removeProperty('display');
-            document.getElementById('lofi_song_name_27').style.color = 'var(--white)';
-
-            track_name.innerText = lofi_list[1].name;
-            track_artist.innerText = lofi_list[1].artist;
-            track_art.src = lofi_list[1].img;
-            playpauseTrack();
-            isPlaying = true;
-            element_id = 'lofi_music_21';
-        }
-    }
-}
+//             track_name.innerText = lofi_list[1].name;
+//             track_artist.innerText = lofi_list[1].artist;
+//             track_art.src = lofi_list[1].img;
+//             playpauseTrack();
+//             isPlaying = true;
+//             element_id = 'lofi_music_28';
+//         }
+//     }
+// }
 
 

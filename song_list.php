@@ -20,7 +20,8 @@ if ($result->num_rows > 0) {
 echo"];";
 
 echo"function nextTrack(){";
-    echo"if(track_index < music_list_php.length - 1 && isRandom === false){";
+    echo"if(track_index < music_list_php.length - 1 && lofi_play == true){console.log(track_index = track_index);";
+    echo"}else if(track_index < music_list_php.length - 1 && isRandom === false){";
         echo"track_index += 1;";
     echo"}else if(track_index < music_list_php.length - 1 && isRandom === true){";
         echo"let random_index = Number.parseInt(Math.random() * music_list_php.length);";

@@ -6,6 +6,7 @@ $result = $conn->query($sql);
 
 echo"let height_count = 0;";
 
+
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
         echo "function fun_".$row['id']."() {";
@@ -20,6 +21,12 @@ if ($result->num_rows > 0) {
                 echo"updateTimer = setInterval(setUpdate, 1000);";
                 echo"curr_track.addEventListener('ended', nextTrack);";
                 echo"php_music_".$row['id'].".setAttribute('name', 'pause');";
+
+                echo"document.getElementById('lofi_song_".$row['id']."').style.display = 'none';";
+                echo"document.getElementById('lofi_icon_".$row['id']."').style.display = 'none';";
+                echo"document.getElementById('lofi_musuc_bars_".$row['id']."').style.display = 'block';";
+                echo"document.getElementById('lofi_song_name_".$row['id']."').style.color = 'var(--play-color)';";
+                
                 echo"track_name.innerText = '".$row['name']."';";
                 echo"track_artist.innerText = '".$row['artist']."';";
                 echo"track_art.src = '".$row['thumb']."';";
@@ -28,6 +35,11 @@ if ($result->num_rows > 0) {
                 echo"element_id = play_element;";
                 echo"element_name = play_element.id;";
             echo "} else{";
+                echo"document.getElementById('lofi_song_".$row['id']."').style.removeProperty('display');";
+                echo"document.getElementById('lofi_icon_".$row['id']."').style.removeProperty('display');";
+                echo"document.getElementById('lofi_musuc_bars_".$row['id']."').style.removeProperty('display');";
+                echo"document.getElementById('lofi_song_name_".$row['id']."').style.color = 'var(--white)';";
+
                 echo"php_music_".$row['id'].".setAttribute('name', 'play');";
                 echo"playpauseTrack();";
                 echo"isPlaying = false;";
@@ -59,6 +71,8 @@ if ($result->num_rows > 0) {
 }else {
     echo "0 results";
 }
+
+
 
 echo"console.log('Database has ' + height_count + ' songs');";
 echo"let height_element = document.getElementById('change_height');";
