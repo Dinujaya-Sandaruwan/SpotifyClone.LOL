@@ -1,4 +1,4 @@
-<main class="main" style="display: none;">
+<main class="main">
         <div class="main__top-side lofi_top" id="main__top_side">
             <div class="main__top-side__top">
                 <div>
@@ -68,7 +68,7 @@
                 while($row_lofi = $result_lofi->fetch_assoc()) {
                     
                     $song_no = $song_no + 1;
-                    echo'<tr class="table-body" onclick="fun_'.$row_lofi['id'].'()" id="lofi_music_'.$row_lofi['id'].'")">';
+                    echo'<tr class="table-body" onclick="lofi_'.$row_lofi['id'].'()" id="lofi_music_'.$row_lofi['id'].'")">';
                     echo'    <td class="hash">';
                     echo'        <p class="number" id="lofi_song_'.$row_lofi['id'].'">'. $song_no .'</p>';
                     echo'        <ion-icon name="play" id="lofi_icon_'.$row_lofi['id'].'" class="play-btn"></ion-icon>';

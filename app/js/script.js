@@ -216,7 +216,6 @@ let track_index = 0;
 let isPlaying = false;
 let isRandom = true;
 let updateTimer;
-let lofi_play = true;
 
 loadTrack(track_index);
 
@@ -279,7 +278,7 @@ function pauseTrack(){
     // track_art.classList.remove('rotate');
     // wave.classList.remove('loader');
     playpause_btn.setAttribute('name', 'play-circle');
-    if (element_id != '' && lofi_play == false) {
+    if (element_id != '') {
         element_id.setAttribute('name', 'play');
         element_id = ''; 
     }
