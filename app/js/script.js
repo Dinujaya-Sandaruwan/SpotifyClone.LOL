@@ -234,12 +234,15 @@ let track_index = 0;
 let isPlaying = false;
 let isRandom = true;
 let updateTimer;
+let lofi_playing = false;
 
 loadTrack(track_index);
 
 // All Play Functions
 let element_id = '';
 let element_name = '';
+
+
 
 function loadTrack(track_index){
     clearInterval(updateTimer);
@@ -319,12 +322,17 @@ function repeatTrack(){
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
+
+
 function playTrack(){
+
     curr_track.play();
     isPlaying = true;
     // track_art.classList.add('rotate');
     // wave.classList.add('loader');
     playpause_btn.setAttribute('name', 'pause-circle');
+    document.getElementById('lofi_list_play_btn').setAttribute('name', 'pause');
+
 }
 function pauseTrack(){
     curr_track.pause();
@@ -336,6 +344,7 @@ function pauseTrack(){
         element_id.setAttribute('name', 'play');
         element_id = ''; 
     }
+    document.getElementById('lofi_list_play_btn').setAttribute('name', 'play');
 
 }
 
@@ -403,6 +412,59 @@ function setUpdate(){
 document.addEventListener("keypress", function onEvent(e) {
     if (e.key == ' ') {
         e.preventDefault();
-        playpauseTrack()
+        if (lofi_playing == false) {
+            playpauseTrack()
+        }
     }
 });
+
+
+
+function getDate()
+{
+	let  today 		= new Date();
+	let  dd 		= String(today.getDate()).padStart(2, '0');
+	let  mm 		= String(today.getMonth() + 1).padStart(2, '0'); //janvier = 0
+	let  yyyy 		= today.getFullYear();
+
+	return dd + '/' + mm + '/' + yyyy;
+}
+// document.getElementById('added_date')
+
+function lofi_list_play_btn() {
+
+    if (isPlaying == false){
+        lofi_list_fun_6();
+
+    } else{
+        lofi_list_fun_6();
+    } 
+    if (element_name != 'lofi_music_6'){
+        lofi_list_fun_6();
+    } 
+}
+
+function show_playlist(){
+    document.getElementById('playlist').style.display = 'block';
+    document.getElementById('home_icon').style.color = 'var(--gray)';
+    document.getElementById('home_text').style.color = 'var(--gray)';
+    document.getElementById('lofi_playlist').style.color = 'var(--white)';
+    playpause_btn.style.pointerEvents = "none";
+    playpause_btn.style.color = "#666666";
+
+    lofi_playing = true;
+    playTrack()
+
+}
+
+function show_home(){
+    document.getElementById('playlist').style.display = 'none';
+    document.getElementById('home_icon').style.color = 'var(--white)';
+    document.getElementById('home_text').style.color = 'var(--white)';
+    document.getElementById('lofi_playlist').style.color = 'var(--gray)';
+    playpause_btn.style.pointerEvents = "all";
+    playpause_btn.style.color = "var(--white)";
+
+    lofi_playing = false;
+
+}
