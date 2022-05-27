@@ -1,0 +1,1 @@
+[23-May-2022 11:43:00 America/New_York] PHP Warning:  mysqli::__construct(): (08004/1040): Too many connections in /home/sserver/spotify.dinujaya.me/add/dbcon.php on line 11
