@@ -172,6 +172,24 @@ const music_list = [
         artist : 'Desawana Remix',
         music : 'music/13_Valentine Mashup 2022.mp3'
     },
+    {
+        img : 'images/study/1.jpg',
+        name : 'Traditional Chinese Music Lofi',
+        artist : 'China Lofi',
+        music : 'music/study/1.mp3'
+    },
+    {
+        img : 'images/study/2.jpg',
+        name : '3 A.M Study Session',
+        artist : 'Lofi Girl',
+        music : 'music/study/2.mp3'
+    },
+    {
+        img : 'images/study/3.jpg',
+        name : 'Sakura ☯︎ Japanese Lofi',
+        artist : 'Japan Lofi',
+        music : 'music/study/3.mp3'
+    },
 
 ];
 
@@ -241,6 +259,27 @@ function loadTrack(track_index){
     // random_bg_color();
 }
 
+let song_index = '';
+
+function loadLofi(track_index){
+    clearInterval(updateTimer);
+    reset();
+
+    song_index = track_index;
+    curr_track.src = music_list[track_index].music;
+    curr_track.load();
+
+    track_art.style.backgroundImage = "images/songs/erandi.jpg";
+    track_name.textContent = music_list[track_index].name;
+    track_artist.textContent = music_list[track_index].artist;
+    // now_playing.textContent = "Playing music " + (track_index + 1) + " of " + music_list.length;
+
+    updateTimer = setInterval(setUpdate, 1000);
+
+    curr_track.addEventListener('ended', repeat_song);
+    // random_bg_color();
+}
+
 function reset(){
     curr_time.textContent = "00:00";
     total_duration.textContent = "00:00";
@@ -261,7 +300,22 @@ function repeatTrack(){
     let current_index = track_index;
     loadTrack(current_index);
     playTrack();
+    console.log('repeating..');
+    // playTrack();
 }
+
+// function repeat_song(){
+//     let lofi_music_6 = document.getElementById('lofi_music_6');
+//     curr_track = new Audio(music_list[song_index].music);
+//     loadLofi(song_index);
+//     lofi_music_6.setAttribute('name', 'pause'); //change
+//     track_name.innerText = music_list[song_index].name;
+//     track_artist.innerText = music_list[song_index].artist;
+//     track_art.src = music_list[song_index].img;
+//     playTrack()
+//     isPlaying = true;
+// }
+
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
@@ -304,6 +358,8 @@ function nextSong() {
 //     track_art.src = music_list[track_index].img;
 //     playTrack();
 // }
+
+
 function prevTrack(){
     if(track_index > 0){
         track_index -= 1;
