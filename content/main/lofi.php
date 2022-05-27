@@ -68,11 +68,11 @@
                 while($row_lofi = $result_lofi->fetch_assoc()) {
                     
                     $song_no = $song_no + 1;
-                    echo'<tr class="table-body" onclick="lofi_01()">';
+                    echo'<tr class="table-body" onclick="lofi_'.$row_lofi['id'].'()" id="lofi_music_'.$row_lofi['id'].'")">';
                     echo'    <td class="hash">';
-                    echo'        <p class="number" id="number_01">'. $song_no .'</p>';
-                    echo'        <ion-icon name="play" id="icon_01" class="play-btn"></ion-icon>';
-                    echo'        <div class="now playing" id="music_bars_01">';
+                    echo'        <p class="number" id="lofi_song_'.$row_lofi['id'].'">'. $song_no .'</p>';
+                    echo'        <ion-icon name="play" id="lofi_icon_'.$row_lofi['id'].'" class="play-btn"></ion-icon>';
+                    echo'        <div class="now playing" id="lofi_musuc_bars_'.$row_lofi['id'].'">';
                     echo'            <span class="bar n1"></span>';
                     echo'            <span class="bar n2"></span>';
                     echo'            <span class="bar n3"></span>';
@@ -82,7 +82,7 @@
                     echo'    <td class="song">';
                     echo'        <img src="'.$row_lofi['thumb'].'" alt="">';
                     echo'        <div>';
-                    echo'            <h1 id="song_name_01">'.$row_lofi['name'].'</h1>';
+                    echo'            <h1 id="lofi_song_name_'.$row_lofi['id'].'">'.$row_lofi['name'].'</h1>';
                     echo'            <h2>Lorem ipsum dolor sit amet.</h2>';
                     echo'        </div>';
                     echo'    </td>';
