@@ -453,8 +453,6 @@ function show_playlist(){
     playpause_btn.style.color = "#666666";
 
     lofi_playing = true;
-    playTrack()
-
 }
 
 function show_home(){

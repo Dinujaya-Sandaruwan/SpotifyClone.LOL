@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify By Dinujaya</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="dist/style.css?cb=1653690431830">
+    <link rel="stylesheet" href="dist/style.css?cb=1653692413924">
 </head>
 <body>
-    <!-- <div class="loader">
+    <div class="loader">
         <img src="images/logo.png" alt="">
         <h1>Spotify By Dinujaya</h1>
-    </div> -->
+    </div>
     <div class="large_screen" onclick="remove_screen()" id="screen_alt">
         <img src="images/large.png" alt="">
     </div>
@@ -474,7 +474,7 @@
             <ion-icon name="expand-outline"></ion-icon>
         </div>
     </aside>
-    <script src="dist/all.js?cb=1653690431830"></script>
+    <script src="dist/all.js?cb=1653692413924"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     
     <script>
